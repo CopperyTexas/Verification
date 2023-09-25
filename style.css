@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#e0e0e0
+}
+.container{
+    width: 300px;
+    height: auto;
+    padding: 40px 20px;
+    background-image: url(./images/bg-forest.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+h1{
+    font-size: 20px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 1px black,
+    2px 2px 1px black;
+}
+.form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.input__field-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.input__field-box input{
+    border: none;
+    max-width: 20%;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgba(240, 240, 240, 0.7);
+    font-size: 25px;
+}
+.input__field-box input::-webkit-inner-spin-button,
+.input__field-box input::-webkit-outer-spin-button{
+    display: none;
+}
+.input__field-box input:focus   {
+    outline: 1.5px solid rgb(137, 172, 118);
+    outline-offset: 2px;
+}
+.form__button{
+    margin-top: 25px;
+    width: 92%;
+    color: #525252;
+    font-size: 16px;
+    padding: 10px 0;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    pointer-events: none;
+    cursor: pointer;
+    background: #e9d585;
+    transition: all 0.2s ease;
+}
+.form__button:focus{
+    outline: none;
+}
+.form__button:focus-visible{
+    outline: 1.5px solid rgb(137, 172, 118);
+}
+.form__button.active{
+    background: #ffcc00;
+    pointer-events: auto;
+    color: #000000;
+}
+.form__button:hover{
+    background: #e6b801;
+}

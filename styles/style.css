@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
 }
+/*--------------------------Form STyle---------------------------------*/
 .verification__form{
     margin: 100px;
     display: flex;
@@ -15,7 +16,7 @@
     width: 400px;
     height: auto;
     padding: 40px 20px;
-    background-image: url(./images/bg-forest.jpeg);
+    background-image: url(../images/bg-forest.jpeg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -90,6 +91,26 @@ h1{
 .form__button:hover{
     background: #e6b801;
 }
+/*---------------------------text STyle---------------------------------*/
+.song__text{
+    font-size: 3em;
+    > span{
+        position: relative;
+        display: inline-block;
+        color:  rgb(137, 172, 118);
+        height: 1.25em;
+        vertical-align: bottom;
+        overflow: hidden;
+    }
+}
+.change__words{
+    display: block;
+    animation: animateWords 5s infinite ease;
+}
+.song{
+    text-align: center;
+}
+/*---------------------------Gallery STyle---------------------------------*/
 .gallery__list{
     width: 80vw;
     border-radius: 50px;
